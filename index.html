@@ -2,23 +2,115 @@
 <html lang="hi">
 <head>
     <meta charset="UTF-8">
-    <title>All Listener Images</title>
+    <title>SakoonApp - Listener Images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        header p {
+            margin: 5px 0 0 0;
+            font-size: 18px;
+        }
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .image-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+        }
+        .image-grid a {
+            display: block;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+            background-color: white;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .image-grid a:hover {
+            transform: scale(1.05);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+        }
+        .image-grid img {
+            display: block;
+            width: 200px;
+            height: auto;
+        }
+        footer {
+            text-align: center;
+            padding: 20px 10px;
+            margin-top: 40px;
+            background-color: #4CAF50;
+            color: white;
+        }
+        footer a {
+            color: white;
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
-    <h1>All Listener Images</h1>
-    <p>Images are hosted for SakoonApp</p>
+    <header>
+        <h1>SakoonApp</h1>
+        <p>हमारे listeners के लिए images और profile branding!</p>
+    </header>
 
-    <h2>Listeners</h2>
+    <main>
+        <h2>Listeners Gallery</h2>
+        <div class="image-grid">
+            <a href="images/listener1.webp" target="_blank">
+                <img src="images/listener1.webp" alt="Listener 1">
+            </a>
+            <a href="images/listener2.webp" target="_blank">
+                <img src="images/listener2.webp" alt="Listener 2">
+            </a>
+            <a href="images/listener3.webp" target="_blank">
+                <img src="images/listener3.webp" alt="Listener 3">
+            </a>
+            <a href="images/listener4.webp" target="_blank">
+                <img src="images/listener4.webp" alt="Listener 4">
+            </a>
+            <a href="images/listener5.webp" target="_blank">
+                <img src="images/listener5.webp" alt="Listener 5">
+            </a>
+            <a href="images/listener6.webp" target="_blank">
+                <img src="images/listener6.webp" alt="Listener 6">
+            </a>
+            <a href="images/listener7.webp" target="_blank">
+                <img src="images/listener7.webp" alt="Listener 7">
+            </a>
+            <a href="images/listener8.webp" target="_blank">
+                <img src="images/listener8.webp" alt="Listener 8">
+            </a>
+            <a href="images/listener9.webp" target="_blank">
+                <img src="images/listener9.webp" alt="Listener 9">
+            </a>
+            <!-- इसी pattern में बाकी listener images भी add करें -->
+        </div>
+    </main>
 
-    <img src="images/listener1.webp" alt="Listener 1" width="200">
-    <img src="images/listener2.webp" alt="Listener 2" width="200">
-    <img src="images/listener3.webp" alt="Listener 3" width="200">
-    <img src="images/listener4.webp" alt="Listener 4" width="200">
-    <img src="images/listener5.webp" alt="Listener 5" width="200">
-    <img src="images/listener6.webp" alt="Listener 6" width="200">
-    <img src="images/listener7.webp" alt="Listener 7" width="200">
-    <img src="images/listener8.webp" alt="Listener 8" width="200">
-    <img src="images/listener9.webp" alt="Listener 9" width="200">
-
+    <footer>
+        &copy; 2025 SakoonApp | <a href="https://sakoonapp.com" target="_blank">Visit our website</a>
+    </footer>
 </body>
-</html>
+                    </html>
