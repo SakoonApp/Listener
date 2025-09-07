@@ -1,193 +1,103 @@
 <!DOCTYPE html>
 <html lang="hi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SakoonApp - Listener Images</title>
-    <style>
-        /* बेस स्टाइल */
-        :root { 
-            color-scheme: light; 
-        }
-        
-        * { 
-            box-sizing: border-box; 
-        }
-        
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
-            margin: 0;
-            padding: 0;
-            line-height: 1.5;
-        }
-
-        /* हेडर */
-        header {
-            background-color: #4CAF50;
-            color: #fff;
-            text-align: center;
-            padding: 20px 10px;
-        }
-        
-        header h1 {
-            margin: 0;
-            font-size: 36px;
-        }
-        
-        header p {
-            margin: 6px 0 0;
-            font-size: 18px;
-        }
-
-        /* मुख्य भाग */
-        main {
-            padding: 20px;
-            max-width: 1200px;
-            margin: auto;
-        }
-        
-        h2 {
-            text-align: center;
-            margin: 0 0 20px;
-            color: #333;
-        }
-
-        /* इमेज ग्रिड (Flexbox) */
-        .image-grid {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-        }
-        
-        .image-grid a {
-            display: block;
-            border: 2px solid #ddd;
-            border-radius: 10px;
-            overflow: hidden;
-            background-color: #fff;
-            transition: transform 0.2s, box-shadow 0.2s;
-            text-decoration: none;
-        }
-        
-        .image-grid a:hover {
-            transform: scale(1.05);
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-        }
-        
-        .image-grid img {
-            display: block;
-            width: 200px;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        /* फ़ूटर */
-        footer {
-            text-align: center;
-            padding: 20px 10px;
-            margin-top: 40px;
-            background-color: #4CAF50;
-            color: #fff;
-        }
-
-        /* Responsive adjustments */
-        @media (max-width: 480px) {
-            .image-grid img { 
-                width: 160px; 
-                height: 160px;
-            }
-            header h1 { 
-                font-size: 28px; 
-            }
-            header p { 
-                font-size: 16px; 
-            }
-        }
-
-        /* Placeholder images for demo */
-        .placeholder-img {
-            background: linear-gradient(45deg, #4CAF50, #45a049);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-            font-size: 14px;
-            text-align: center;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SakoonApp</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  header {
+    background: #4CAF50;
+    color: white;
+    padding: 1rem;
+  }
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 15px;
+    padding: 20px;
+  }
+  .image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  .image-grid img:hover {
+    transform: scale(1.05);
+  }
+  footer {
+    background: #333;
+    color: white;
+    padding: 1rem;
+    margin-top: 20px;
+  }
+  footer a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+</style>
 </head>
 <body>
-    <header>
-        <h1>SakoonApp</h1>
-        <p>Listener Images Gallery</p>
-    </header>
+<header>
+  <h1>SakoonApp</h1>
+  <p>हमारे listeners के लिए images और profile branding!</p>
+</header>
 
-    <main>
-        <h2>Images</h2>
-        
-        <div class="image-grid">
-            <!-- नई 3 इमेजें - अपनी actual images के साथ src को बदलें -->
-            <a href="icon.png" target="_blank" rel="noopener">
-                <div class="placeholder-img" style="width: 200px; height: 200px;">
-                    Icon 1<br>
-                    (icon.png)
-                </div>
-            </a>
-            
-            <a href="icon2.png" target="_blank" rel="noopener">
-                <div class="placeholder-img" style="width: 200px; height: 200px;">
-                    Icon 2<br>
-                    (icon2.png)
-                </div>
-            </a>
-            
-            <a href="icon3.png" target="_blank" rel="noopener">
-                <div class="placeholder-img" style="width: 200px; height: 200px;">
-                    Icon 3<br>
-                    (icon3.png)
-                </div>
-            </a>
+<main>
+  <h2>Listeners Gallery</h2>
+  <div class="image-grid">
 
-            <!-- अतिरिक्त इमेजें यहाँ जोड़ सकते हैं -->
-            <a href="sample1.png" target="_blank" rel="noopener">
-                <div class="placeholder-img" style="width: 200px; height: 200px;">
-                    Sample 1
-                </div>
-            </a>
-            
-            <a href="sample2.png" target="_blank" rel="noopener">
-                <div class="placeholder-img" style="width: 200px; height: 200px;">
-                    Sample 2
-                </div>
-            </a>
-            
-            <a href="sample3.png" target="_blank" rel="noopener">
-                <div class="placeholder-img" style="width: 200px; height: 200px;">
-                    Sample 3
-                </div>
-            </a>
-        </div>
-    </main>
+    <!-- पहले से जोड़ी हुई images -->
+    <a href="images/listener1.webp" target="_blank">
+      <img src="images/listener1.webp" alt="Listener 1">
+    </a>
+    <a href="images/listener2.webp" target="_blank">
+      <img src="images/listener2.webp" alt="Listener 2">
+    </a>
+    <a href="images/listener3.webp" target="_blank">
+      <img src="images/listener3.webp" alt="Listener 3">
+    </a>
+    <a href="images/listener4.webp" target="_blank">
+      <img src="images/listener4.webp" alt="Listener 4">
+    </a>
+    <a href="images/listener5.webp" target="_blank">
+      <img src="images/listener5.webp" alt="Listener 5">
+    </a>
+    <a href="images/listener6.webp" target="_blank">
+      <img src="images/listener6.webp" alt="Listener 6">
+    </a>
+    <a href="images/listener7.webp" target="_blank">
+      <img src="images/listener7.webp" alt="Listener 7">
+    </a>
+    <a href="images/listener8.webp" target="_blank">
+      <img src="images/listener8.webp" alt="Listener 8">
+    </a>
+    <a href="images/listener9.webp" target="_blank">
+      <img src="images/listener9.webp" alt="Listener 9">
+    </a>
 
-    <footer>
-        © <span id="year"></span> SakoonApp - All Rights Reserved
-    </footer>
+    <!-- अब 3 PNG images भी जोड़ दिए -->
+    <a href="images/icon.png" target="_blank">
+      <img src="images/icon.png" alt="Icon">
+    </a>
+    <a href="images/icon2.png" target="_blank">
+      <img src="images/icon2.png" alt="Icon2">
+    </a>
+    <a href="images/icon3.png" target="_blank">
+      <img src="images/icon3.png" alt="Icon3">
+    </a>
 
-    <script>
-        // Optional: Handle image loading errors
-        document.querySelectorAll('.image-grid img').forEach(img => {
-            img.onerror = function() {
-                this.style.background = '#f0f0f0';
-                this.style.display = 'flex';
-                this.style.alignItems = 'center';
-                this.style.justifyContent = 'center';
-                this.style.color = '#666';
-                this.alt = 'Image not found';
-            };
-        });
-    </script>
+  </div>
+</main>
+
+<footer>
+  &copy; 2025 SakoonApp | <a href="https://sakoonapp.in" target="_blank">Visit our website</a>
+</footer>
 </body>
 </html>
